@@ -1,29 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>AI Smart Hostel Management</title>
+    <title>AI Smart Hostel | IIT Palakkad</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>AI Smart Hostel Management</h1>
-        <p>IIT Palakkad</p>
-    </header>
+<div class="app">
 
-    <main>
-        <h2>Welcome</h2>
-        <p>Smart hostel management system powered by AI.</p>
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-mark">AI</div>
+
+            <div>
+                <h2>Smart Hostel</h2>
+                <span>IIT Palakkad</span>
+            </div>
+        </div>
+
+
+        <nav class="nav">
+
+            <p class="nav-label">MAIN</p>
+
+            <a href="#" class="nav-item active">
+                <span class="icon">⌂</span>
+                <span>Overview</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="icon">▣</span>
+                <span>My Room</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="icon">✓</span>
+                <span>Complaints</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="icon">◉</span>
+                <span>Visitors</span>
+            </a>
+
+
+            <p class="nav-label second">HOSTEL</p>
+
+            <a href="#" class="nav-item">
+                <span class="icon">◇</span>
+                <span>Mess</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="icon">ϟ</span>
+                <span>Electricity</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="icon">→</span>
+                <span>Transport</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="icon">□</span>
+                <span>Events</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#" class="nav-item">
+                <span class="icon">⚙</span>
+                <span>Settings</span>
+            </a>
+
+            <a href="#" class="nav-item logout">
+                <span class="icon">↪</span>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div class="mobile-brand">
+                <strong>AI Smart Hostel</strong>
+            </div>
+
+            <div class="top-actions">
+
+                <button class="notification">
+                    <span>♢</span>
+                    <i></i>
+                </button>
+
+                <div class="profile">
+
+                    <div class="avatar">
+                        S
+                    </div>
+
+                    <div class="profile-info">
+                        <strong>Santosh</strong>
+                        <span>Student</span>
+                    </div>
+
+                    <span class="chevron">⌄</span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <section class="content">
+
+
+            <!-- WELCOME -->
+
+            <div class="welcome">
+
+                <div class="welcome-text">
+
+                    <span class="eyebrow">
+                        THURSDAY · 07 AUGUST 2026
+                    </span>
+
+                    <h1>
+                        Good afternoon, Santosh.
+                    </h1>
+
+                    <p>
+                        Everything you need for your hostel,
+                        beautifully organized in one place.
+                    </p>
+
+                </div>
+
+                <div class="welcome-orb"></div>
+
+            </div>
+
+
+
+            <!-- QUICK STATS -->
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+                        <span>ROOM</span>
+
+                        <div class="stat-icon blue">
+                            ▣
+                        </div>
+                    </div>
+
+                    <h2>A-203</h2>
+
+                    <p>Block A · 2nd Floor</p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+                        <span>COMPLAINTS</span>
+
+                        <div class="stat-icon orange">
+                            ✓
+                        </div>
+                    </div>
+
+                    <h2>02</h2>
+
+                    <p>1 active · 1 resolved</p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+                        <span>VISITORS</span>
+
+                        <div class="stat-icon purple">
+                            ◉
+                        </div>
+                    </div>
+
+                    <h2>01</h2>
+
+                    <p>Visitor registered today</p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+                        <span>ELECTRICITY</span>
+
+                        <div class="stat-icon green">
+                            ϟ
+                        </div>
+                    </div>
+
+                    <h2>Normal</h2>
+
+                    <p>Consumption looks healthy</p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MAIN GRID -->
+
+            <div class="main-grid">
+
+
+                <!-- AI ASSISTANT -->
+
+                <section class="panel ai-panel">
+
+                    <div class="panel-heading">
+
+                        <div>
+
+                            <span class="mini-label">
+                                INTELLIGENT ASSISTANT
+                            </span>
+
+                            <h2>How can I help you?</h2>
+
+                        </div>
+
+                        <div class="ai-badge">
+                            ✦ AI
+                        </div>
+
+                    </div>
+
+
+                    <p class="ai-description">
+                        Ask about your room, mess, complaints,
+                        transport, events or hostel services.
+                    </p>
+
+
+                    <div class="search-box">
+
+                        <span>⌕</span>
+
+                        <input
+                            type="text"
+                            placeholder="Ask anything about your hostel..."
+                        >
+
+                        <button>→</button>
+
+                    </div>
+
+
+                    <div class="suggestions">
+
+                        <button>Today's mess</button>
+
+                        <button>Next buggy</button>
+
+                        <button>My complaints</button>
+
+                        <button>Upcoming events</button>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- TODAY'S MESS -->
+
+                <section class="panel mess-panel">
+
+                    <div class="panel-heading">
+
+                        <div>
+
+                            <span class="mini-label">
+                                TODAY · THURSDAY
+                            </span>
+
+                            <h2>Today's Mess</h2>
+
+                        </div>
+
+                        <button class="more-button">
+                            →
+                        </button>
+
+                    </div>
+
+
+                    <div class="meal">
+
+                        <div class="meal-time">
+                            <span>BREAKFAST</span>
+                            <small>7:30 – 9:00 AM</small>
+                        </div>
+
+                        <strong>
+                            Idli · Sambar · Chutney
+                        </strong>
+
+                    </div>
+
+
+                    <div class="meal">
+
+                        <div class="meal-time">
+                            <span>LUNCH</span>
+                            <small>12:30 – 2:00 PM</small>
+                        </div>
+
+                        <strong>
+                            Rice · Dal · Vegetable Curry
+                        </strong>
+
+                    </div>
+
+
+                    <div class="meal">
+
+                        <div class="meal-time">
+                            <span>DINNER</span>
+                            <small>7:30 – 9:00 PM</small>
+                        </div>
+
+                        <strong>
+                            Chapati · Paneer Curry
+                        </strong>
+
+                    </div>
+
+
+                    <button class="full-menu">
+                        View weekly menu
+                        <span>→</span>
+                    </button>
+
+                </section>
+
+            </div>
+
+
+
+            <!-- LOWER GRID -->
+
+            <div class="lower-grid">
+
+
+                <!-- COMPLAINTS -->
+
+                <section class="panel">
+
+                    <div class="panel-heading">
+
+                        <div>
+
+                            <span class="mini-label">
+                                SERVICE
+                            </span>
+
+                            <h2>Recent Complaints</h2>
+
+                        </div>
+
+                        <button class="more-button">
+                            →
+                        </button>
+
+                    </div>
+
+
+                    <div class="complaint">
+
+                        <div class="complaint-left">
+
+                            <div class="complaint-icon">
+                                ϟ
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Corridor light not working
+                                </strong>
+
+                                <span>
+                                    Electrical · 2 hours ago
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <span class="status pending">
+                            Pending
+                        </span>
+
+                    </div>
+
+
+                    <div class="complaint">
+
+                        <div class="complaint-left">
+
+                            <div class="complaint-icon">
+                                ◇
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Water tap issue
+                                </strong>
+
+                                <span>
+                                    Plumbing · Yesterday
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <span class="status resolved">
+                            Resolved
+                        </span>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- TRANSPORT -->
+
+                <section class="panel transport-panel">
+
+                    <div class="panel-heading">
+
+                        <div>
+
+                            <span class="mini-label">
+                                CAMPUS TRANSPORT
+                            </span>
+
+                            <h2>Next Buggy</h2>
+
+                        </div>
+
+                        <div class="live">
+                            <span></span>
+                            LIVE
+                        </div>
+
+                    </div>
+
+
+                    <div class="transport-time">
+
+                        <strong>02:30</strong>
+
+                        <span>PM</span>
+
+                    </div>
+
+
+                    <div class="route">
+
+                        <span>Hostel Block A</span>
+
+                        <span class="line"></span>
+
+                        <span>Academic Block</span>
+
+                    </div>
+
+
+                    <button class="transport-button">
+                        View all timings →
+                    </button>
+
+                </section>
+
+
+            </div>
+
+
+
+            <!-- EVENTS -->
+
+            <section class="panel events-panel">
+
+                <div class="panel-heading">
+
+                    <div>
+
+                        <span class="mini-label">
+                            CAMPUS LIFE
+                        </span>
+
+                        <h2>Upcoming Events</h2>
+
+                    </div>
+
+                    <button class="more-button">
+                        View calendar →
+                    </button>
+
+                </div>
+
+
+                <div class="events">
+
+                    <div class="event">
+
+                        <div class="date">
+                            <strong>12</strong>
+                            <span>AUG</span>
+                        </div>
+
+                        <div>
+                            <strong>Independence Day Preparations</strong>
+                            <span>Student Activity Centre</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="event">
+
+                        <div class="date">
+                            <strong>16</strong>
+                            <span>AUG</span>
+                        </div>
+
+                        <div>
+                            <strong>Hostel Sports Evening</strong>
+                            <span>Campus Ground</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="event">
+
+                        <div class="date">
+                            <strong>21</strong>
+                            <span>AUG</span>
+                        </div>
+
+                        <div>
+                            <strong>Technical Club Meetup</strong>
+                            <span>Academic Block</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
     </main>
 
-    <script src="js/script.js"></script>
+</div>
+
+
+<script src="js/script.js"></script>
 
 </body>
-
 </html>
