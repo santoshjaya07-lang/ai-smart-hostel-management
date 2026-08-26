@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Room | AI Smart Hostel</title>
+
+    <!-- Main dashboard CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Room page CSS -->
+    <link rel="stylesheet" href="../css/room.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-mark">
+                AI
+            </div>
+
+            <div>
+                <h2>Smart Hostel</h2>
+                <span>IIT Palakkad</span>
+            </div>
+
+        </div>
+
+
+        <nav class="nav">
+
+            <p class="nav-label">MAIN</p>
+
+            <a href="../index.html" class="nav-item">
+                <span class="icon">⌂</span>
+                <span>Overview</span>
+            </a>
+
+            <a href="room.html" class="nav-item active">
+                <span class="icon">▣</span>
+                <span>My Room</span>
+            </a>
+
+            <a href="complaints.html" class="nav-item">
+                <span class="icon">✓</span>
+                <span>Complaints</span>
+            </a>
+
+            <a href="visitors.html" class="nav-item">
+                <span class="icon">◉</span>
+                <span>Visitors</span>
+            </a>
+
+
+            <p class="nav-label second">HOSTEL</p>
+
+            <a href="mess.html" class="nav-item">
+                <span class="icon">◇</span>
+                <span>Mess</span>
+            </a>
+
+            <a href="electricity.html" class="nav-item">
+                <span class="icon">ϟ</span>
+                <span>Electricity</span>
+            </a>
+
+            <a href="transport.html" class="nav-item">
+                <span class="icon">→</span>
+                <span>Transport</span>
+            </a>
+
+            <a href="events.html" class="nav-item">
+                <span class="icon">□</span>
+                <span>Events</span>
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#" class="nav-item">
+                <span class="icon">⚙</span>
+                <span>Settings</span>
+            </a>
+
+            <a href="#" class="nav-item logout">
+                <span class="icon">↪</span>
+                <span>Logout</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div class="mobile-brand">
+                <strong>AI Smart Hostel</strong>
+            </div>
+
+
+            <div class="top-actions">
+
+                <button class="notification">
+                    <span>♢</span>
+                    <i></i>
+                </button>
+
+
+                <div class="profile">
+
+                    <div class="avatar">
+                        S
+                    </div>
+
+                    <div class="profile-info">
+
+                        <strong>Santosh</strong>
+
+                        <span>
+                            Student
+                        </span>
+
+                    </div>
+
+                    <span class="chevron">
+                        ⌄
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="content room-content">
+
+
+            <!-- PAGE HEADER -->
+
+            <div class="page-header">
+
+                <div>
+
+                    <span class="eyebrow">
+                        ACCOMMODATION
+                    </span>
+
+                    <h1>
+                        My Room
+                    </h1>
+
+                    <p>
+                        Your current hostel accommodation and
+                        room information.
+                    </p>
+
+                </div>
+
+
+                <div class="room-status">
+
+                    <span></span>
+
+                    Room Active
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= ROOM HERO ================= -->
+
+            <section class="room-hero">
+
+                <div class="room-hero-info">
+
+                    <span class="mini-label">
+                        YOUR ACCOMMODATION
+                    </span>
+
+                    <h2>
+                        A-203
+                    </h2>
+
+                    <p>
+                        A Block · 2nd Floor
+                    </p>
+
+
+                    <div class="room-tags">
+
+                        <span>
+                            4 Beds
+                        </span>
+
+                        <span>
+                            Fully Occupied
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="room-number">
+
+                    <span>
+                        ROOM
+                    </span>
+
+                    <strong>
+                        A-203
+                    </strong>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= ROOM DETAILS ================= -->
+
+            <div class="room-grid">
+
+
+                <!-- ROOM VISUAL -->
+
+                <section class="panel room-layout-panel">
+
+                    <div class="panel-heading">
+
+                        <div>
+
+                            <span class="mini-label">
+                                ROOM LAYOUT
+                            </span>
+
+                            <h2>
+                                Your Room
+                            </h2>
+
+                        </div>
+
+                        <span class="capacity">
+                            4 / 4
+                        </span>
+
+                    </div>
+
+
+                    <div class="room-layout">
+
+
+                        <!-- BED 1 -->
+
+                        <div class="bed occupied">
+
+                            <div class="bed-number">
+                                01
+                            </div>
+
+                            <div class="bed-icon">
+                                ▬
+                            </div>
+
+                            <strong>
+                                Santosh
+                            </strong>
+
+                            <span>
+                                You
+                            </span>
+
+                        </div>
+
+
+                        <!-- BED 2 -->
+
+                        <div class="bed occupied">
+
+                            <div class="bed-number">
+                                02
+                            </div>
+
+                            <div class="bed-icon">
+                                ▬
+                            </div>
+
+                            <strong>
+                                Student 02
+                            </strong>
+
+                            <span>
+                                Occupied
+                            </span>
+
+                        </div>
+
+
+                        <!-- BED 3 -->
+
+                        <div class="bed occupied">
+
+                            <div class="bed-number">
+                                03
+                            </div>
+
+                            <div class="bed-icon">
+                                ▬
+                            </div>
+
+                            <strong>
+                                Student 03
+                            </strong>
+
+                            <span>
+                                Occupied
+                            </span>
+
+                        </div>
+
+
+                        <!-- BED 4 -->
+
+                        <div class="bed occupied">
+
+                            <div class="bed-number">
+                                04
+                            </div>
+
+                            <div class="bed-icon">
+                                ▬
+                            </div>
+
+                            <strong>
+                                Student 04
+                            </strong>
+
+                            <span>
+                                Occupied
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- ROOM INFORMATION -->
+
+                <section class="panel">
+
+                    <div class="panel-heading">
+
+                        <div>
+
+                            <span class="mini-label">
+                                INFORMATION
+                            </span>
+
+                            <h2>
+                                Room Details
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="details-list">
+
+                        <div class="detail-row">
+
+                            <span>
+                                Block
+                            </span>
+
+                            <strong>
+                                A Block
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-row">
+
+                            <span>
+                                Room Number
+                            </span>
+
+                            <strong>
+                                A-203
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-row">
+
+                            <span>
+                                Floor
+                            </span>
+
+                            <strong>
+                                2nd Floor
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-row">
+
+                            <span>
+                                Capacity
+                            </span>
+
+                            <strong>
+                                4 Students
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-row">
+
+                            <span>
+                                Occupancy
+                            </span>
+
+                            <strong>
+                                4 / 4
+                            </strong>
+
+                        </div>
+
+
+                        <div class="detail-row">
+
+                            <span>
+                                Status
+                            </span>
+
+                            <strong class="green-text">
+                                Active
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+
+            <!-- ================= ROOMMATES ================= -->
+
+            <section class="panel roommates-panel">
+
+                <div class="panel-heading">
+
+                    <div>
+
+                        <span class="mini-label">
+                            ROOM MEMBERS
+                        </span>
+
+                        <h2>
+                            Roommates
+                        </h2>
+
+                    </div>
+
+                    <span class="member-count">
+                        4 Students
+                    </span>
+
+                </div>
+
+
+                <div class="roommates">
+
+
+                    <div class="roommate">
+
+                        <div class="roommate-avatar">
+                            S
+                        </div>
+
+                        <div class="roommate-info">
+
+                            <strong>
+                                Santosh
+                            </strong>
+
+                            <span>
+                                Student · Bed 01
+                            </span>
+
+                        </div>
+
+                        <span class="you-badge">
+                            YOU
+                        </span>
+
+                    </div>
+
+
+                    <div class="roommate">
+
+                        <div class="roommate-avatar">
+                            2
+                        </div>
+
+                        <div class="roommate-info">
+
+                            <strong>
+                                Student 02
+                            </strong>
+
+                            <span>
+                                Student · Bed 02
+                            </span>
+
+                        </div>
+
+                        <span class="occupied-badge">
+                            ACTIVE
+                        </span>
+
+                    </div>
+
+
+                    <div class="roommate">
+
+                        <div class="roommate-avatar">
+                            3
+                        </div>
+
+                        <div class="roommate-info">
+
+                            <strong>
+                                Student 03
+                            </strong>
+
+                            <span>
+                                Student · Bed 03
+                            </span>
+
+                        </div>
+
+                        <span class="occupied-badge">
+                            ACTIVE
+                        </span>
+
+                    </div>
+
+
+                    <div class="roommate">
+
+                        <div class="roommate-avatar">
+                            4
+                        </div>
+
+                        <div class="roommate-info">
+
+                            <strong>
+                                Student 04
+                            </strong>
+
+                            <span>
+                                Student · Bed 04
+                            </span>
+
+                        </div>
+
+                        <span class="occupied-badge">
+                            ACTIVE
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= FACILITIES ================= -->
+
+            <section class="panel facilities-panel">
+
+                <div class="panel-heading">
+
+                    <div>
+
+                        <span class="mini-label">
+                            ROOM FACILITIES
+                        </span>
+
+                        <h2>
+                            Available Facilities
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="facilities">
+
+                    <div class="facility">
+
+                        <div class="facility-icon">
+                            ◇
+                        </div>
+
+                        <strong>
+                            Study Table
+                        </strong>
+
+                        <span>
+                            Available
+                        </span>
+
+                    </div>
+
+
+                    <div class="facility">
+
+                        <div class="facility-icon">
+                            ▱
+                        </div>
+
+                        <strong>
+                            Cupboard
+                        </strong>
+
+                        <span>
+                            Available
+                        </span>
+
+                    </div>
+
+
+                    <div class="facility">
+
+                        <div class="facility-icon">
+                            ϟ
+                        </div>
+
+                        <strong>
+                            Power Socket
+                        </strong>
+
+                        <span>
+                            Available
+                        </span>
+
+                    </div>
+
+
+                    <div class="facility">
+
+                        <div class="facility-icon">
+                            ≋
+                        </div>
+
+                        <strong>
+                            Fan
+                        </strong>
+
+                        <span>
+                            Available
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

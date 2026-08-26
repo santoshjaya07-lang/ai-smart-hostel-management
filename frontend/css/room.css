@@ -1,0 +1,623 @@
+/* =========================================================
+   MY ROOM PAGE
+   ========================================================= */
+
+.room-content {
+    max-width: 1500px;
+}
+
+
+/* PAGE HEADER */
+
+.page-header {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    margin-bottom: 22px;
+}
+
+.page-header h1 {
+    margin-top: 10px;
+
+    font-size: 38px;
+
+    letter-spacing: -1.7px;
+
+    font-weight: 650;
+}
+
+.page-header p {
+    margin-top: 7px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+}
+
+
+/* ROOM STATUS */
+
+.room-status {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 9px 13px;
+
+    background: var(--green-soft);
+
+    color: #218739;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+.room-status span {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: var(--green);
+
+    box-shadow:
+        0 0 0 4px rgba(52,199,89,0.12);
+}
+
+
+/* =========================================================
+   ROOM HERO
+   ========================================================= */
+
+.room-hero {
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 210px;
+
+    padding: 35px 40px;
+
+    border-radius: 28px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #111113,
+            #242428 65%,
+            #303036
+        );
+
+    color: white;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.12);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.room-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    right: -100px;
+    top: -180px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,255,255,0.12),
+            transparent 65%
+        );
+}
+
+.room-hero-info {
+    position: relative;
+
+    z-index: 2;
+}
+
+.room-hero h2 {
+    margin-top: 9px;
+
+    font-size: 58px;
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+}
+
+.room-hero p {
+    margin-top: 8px;
+
+    color: #a1a1a6;
+
+    font-size: 12px;
+}
+
+.room-tags {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 22px;
+}
+
+.room-tags span {
+    padding: 7px 11px;
+
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.08);
+
+    color: #d1d1d6;
+
+    font-size: 9px;
+
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.room-number {
+    position: relative;
+
+    z-index: 2;
+
+    text-align: right;
+}
+
+.room-number span {
+    display: block;
+
+    color: #8e8e93;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+}
+
+.room-number strong {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 25px;
+
+    letter-spacing: -1px;
+}
+
+
+/* =========================================================
+   ROOM GRID
+   ========================================================= */
+
+.room-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.45fr 1fr;
+
+    gap: 18px;
+
+    margin-top: 18px;
+}
+
+
+/* =========================================================
+   ROOM LAYOUT
+   ========================================================= */
+
+.capacity {
+    padding: 7px 10px;
+
+    border-radius: 20px;
+
+    background: var(--green-soft);
+
+    color: #218739;
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+.room-layout {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 12px;
+
+    margin-top: 22px;
+
+    padding: 18px;
+
+    background: #f7f7f8;
+
+    border-radius: 18px;
+}
+
+.bed {
+    position: relative;
+
+    min-height: 125px;
+
+    padding: 17px;
+
+    border-radius: 16px;
+
+    background: white;
+
+    border: 1px solid #e8e8ea;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.bed:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.06);
+}
+
+.bed-number {
+    position: absolute;
+
+    top: 12px;
+    right: 12px;
+
+    color: #a1a1a6;
+
+    font-size: 8px;
+
+    font-weight: 700;
+}
+
+.bed-icon {
+    width: 35px;
+    height: 35px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 10px;
+
+    background: var(--blue-soft);
+
+    color: var(--blue);
+
+    font-size: 18px;
+}
+
+.bed strong {
+    margin-top: 10px;
+
+    font-size: 12px;
+}
+
+.bed span {
+    margin-top: 3px;
+
+    color: var(--muted);
+
+    font-size: 9px;
+}
+
+.bed.occupied:first-child {
+    border-color: rgba(0,113,227,0.25);
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #f7fbff
+        );
+}
+
+
+/* =========================================================
+   ROOM DETAILS
+   ========================================================= */
+
+.details-list {
+    margin-top: 17px;
+}
+
+.detail-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #eeeeef;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-row span {
+    color: var(--muted);
+
+    font-size: 11px;
+}
+
+.detail-row strong {
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+.green-text {
+    color: #218739;
+}
+
+
+/* =========================================================
+   ROOMMATES
+   ========================================================= */
+
+.roommates-panel {
+    margin-top: 18px;
+}
+
+.member-count {
+    padding: 7px 10px;
+
+    border-radius: 20px;
+
+    background: #f5f5f7;
+
+    color: var(--muted);
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+.roommates {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 10px;
+
+    margin-top: 18px;
+}
+
+.roommate {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 13px;
+
+    border: 1px solid #eeeeef;
+
+    border-radius: 14px;
+
+    background: #fafafa;
+}
+
+.roommate-avatar {
+    width: 37px;
+    height: 37px;
+
+    flex-shrink: 0;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #1d1d1f;
+
+    color: white;
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+.roommate-info {
+    flex: 1;
+}
+
+.roommate-info strong {
+    display: block;
+
+    font-size: 11px;
+}
+
+.roommate-info span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: var(--muted);
+
+    font-size: 9px;
+}
+
+.you-badge,
+.occupied-badge {
+    padding: 5px 7px;
+
+    border-radius: 15px;
+
+    font-size: 7px;
+
+    font-weight: 700;
+}
+
+.you-badge {
+    background: var(--blue-soft);
+
+    color: var(--blue);
+}
+
+.occupied-badge {
+    background: var(--green-soft);
+
+    color: #218739;
+}
+
+
+/* =========================================================
+   FACILITIES
+   ========================================================= */
+
+.facilities-panel {
+    margin-top: 18px;
+}
+
+.facilities {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-top: 18px;
+}
+
+.facility {
+    padding: 18px;
+
+    border: 1px solid #eeeeef;
+
+    border-radius: 15px;
+
+    background: #fafafa;
+
+    text-align: center;
+}
+
+.facility-icon {
+    width: 40px;
+    height: 40px;
+
+    margin: 0 auto 10px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 12px;
+
+    background: white;
+
+    color: var(--blue);
+
+    font-size: 17px;
+}
+
+.facility strong {
+    display: block;
+
+    font-size: 11px;
+}
+
+.facility span {
+    display: block;
+
+    margin-top: 4px;
+
+    color: #218739;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .room-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .facilities {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .page-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .page-header h1 {
+        font-size: 30px;
+    }
+
+    .room-hero {
+        padding: 28px;
+
+        min-height: 190px;
+    }
+
+    .room-hero h2 {
+        font-size: 44px;
+    }
+
+    .room-number {
+        display: none;
+    }
+
+    .room-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .roommates {
+        grid-template-columns: 1fr;
+    }
+
+    .facilities {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
