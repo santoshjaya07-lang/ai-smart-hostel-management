@@ -5,714 +5,299 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Room | AI Smart Hostel</title>
+    <title>Room | AI Smart Hostel</title>
 
-    <!-- Main dashboard CSS -->
-    <link rel="stylesheet" href="../css/style.css">
-
-    <!-- Room page CSS -->
     <link rel="stylesheet" href="../css/room.css">
 </head>
 
 <body>
 
-<div class="app">
+    <main class="room-page">
 
-    <!-- ================= SIDEBAR ================= -->
+        <!-- HEADER -->
 
-    <aside class="sidebar">
-
-        <div class="brand">
-
-            <div class="brand-mark">
-                AI
-            </div>
+        <header class="room-header">
 
             <div>
-                <h2>Smart Hostel</h2>
-                <span>IIT Palakkad</span>
-            </div>
 
-        </div>
+                <span class="eyebrow">
+                    HOSTEL ROOM
+                </span>
 
+                <h1>
+                    Room A101
+                </h1>
 
-        <nav class="nav">
-
-            <p class="nav-label">MAIN</p>
-
-            <a href="../index.html" class="nav-item">
-                <span class="icon">⌂</span>
-                <span>Overview</span>
-            </a>
-
-            <a href="room.html" class="nav-item active">
-                <span class="icon">▣</span>
-                <span>My Room</span>
-            </a>
-
-            <a href="complaints.html" class="nav-item">
-                <span class="icon">✓</span>
-                <span>Complaints</span>
-            </a>
-
-            <a href="visitors.html" class="nav-item">
-                <span class="icon">◉</span>
-                <span>Visitors</span>
-            </a>
-
-
-            <p class="nav-label second">HOSTEL</p>
-
-            <a href="mess.html" class="nav-item">
-                <span class="icon">◇</span>
-                <span>Mess</span>
-            </a>
-
-            <a href="electricity.html" class="nav-item">
-                <span class="icon">ϟ</span>
-                <span>Electricity</span>
-            </a>
-
-            <a href="transport.html" class="nav-item">
-                <span class="icon">→</span>
-                <span>Transport</span>
-            </a>
-
-            <a href="events.html" class="nav-item">
-                <span class="icon">□</span>
-                <span>Events</span>
-            </a>
-
-        </nav>
-
-
-        <div class="sidebar-bottom">
-
-            <a href="#" class="nav-item">
-                <span class="icon">⚙</span>
-                <span>Settings</span>
-            </a>
-
-            <a href="#" class="nav-item logout">
-                <span class="icon">↪</span>
-                <span>Logout</span>
-            </a>
-
-        </div>
-
-    </aside>
-
-
-
-    <!-- ================= MAIN ================= -->
-
-    <main class="main">
-
-        <!-- TOP BAR -->
-
-        <header class="topbar">
-
-            <div class="mobile-brand">
-                <strong>AI Smart Hostel</strong>
-            </div>
-
-
-            <div class="top-actions">
-
-                <button class="notification">
-                    <span>♢</span>
-                    <i></i>
-                </button>
-
-
-                <div class="profile">
-
-                    <div class="avatar">
-                        S
-                    </div>
-
-                    <div class="profile-info">
-
-                        <strong>Santosh</strong>
-
-                        <span>
-                            Student
-                        </span>
-
-                    </div>
-
-                    <span class="chevron">
-                        ⌄
-                    </span>
-
-                </div>
+                <p>
+                    Block A · Floor 1
+                </p>
 
             </div>
+
+            <button
+                class="back-button"
+                id="backButton"
+            >
+                ← Back
+            </button>
 
         </header>
 
 
+        <!-- ROOM SUMMARY -->
 
-        <!-- ================= CONTENT ================= -->
+        <section class="room-summary">
 
-        <section class="content room-content">
+            <div class="summary-card">
+
+                <span>
+                    Occupancy
+                </span>
+
+                <strong>
+                    4 / 4
+                </strong>
+
+            </div>
 
 
-            <!-- PAGE HEADER -->
+            <div class="summary-card">
 
-            <div class="page-header">
+                <span>
+                    Room Type
+                </span>
+
+                <strong>
+                    4 Bed
+                </strong>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <span>
+                    Block
+                </span>
+
+                <strong>
+                    A
+                </strong>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <span>
+                    Floor
+                </span>
+
+                <strong>
+                    1
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- STUDENTS -->
+
+        <section class="students-section">
+
+            <div class="section-heading">
 
                 <div>
 
                     <span class="eyebrow">
-                        ACCOMMODATION
-                    </span>
-
-                    <h1>
-                        My Room
-                    </h1>
-
-                    <p>
-                        Your current hostel accommodation and
-                        room information.
-                    </p>
-
-                </div>
-
-
-                <div class="room-status">
-
-                    <span></span>
-
-                    Room Active
-
-                </div>
-
-            </div>
-
-
-
-            <!-- ================= ROOM HERO ================= -->
-
-            <section class="room-hero">
-
-                <div class="room-hero-info">
-
-                    <span class="mini-label">
-                        YOUR ACCOMMODATION
+                        ROOM MEMBERS
                     </span>
 
                     <h2>
-                        A-203
+                        Students
                     </h2>
 
-                    <p>
-                        A Block · 2nd Floor
-                    </p>
-
-
-                    <div class="room-tags">
-
-                        <span>
-                            4 Beds
-                        </span>
-
-                        <span>
-                            Fully Occupied
-                        </span>
-
-                    </div>
-
                 </div>
 
-
-                <div class="room-number">
-
-                    <span>
-                        ROOM
-                    </span>
-
-                    <strong>
-                        A-203
-                    </strong>
-
-                </div>
-
-            </section>
-
-
-
-            <!-- ================= ROOM DETAILS ================= -->
-
-            <div class="room-grid">
-
-
-                <!-- ROOM VISUAL -->
-
-                <section class="panel room-layout-panel">
-
-                    <div class="panel-heading">
-
-                        <div>
-
-                            <span class="mini-label">
-                                ROOM LAYOUT
-                            </span>
-
-                            <h2>
-                                Your Room
-                            </h2>
-
-                        </div>
-
-                        <span class="capacity">
-                            4 / 4
-                        </span>
-
-                    </div>
-
-
-                    <div class="room-layout">
-
-
-                        <!-- BED 1 -->
-
-                        <div class="bed occupied">
-
-                            <div class="bed-number">
-                                01
-                            </div>
-
-                            <div class="bed-icon">
-                                ▬
-                            </div>
-
-                            <strong>
-                                Santosh
-                            </strong>
-
-                            <span>
-                                You
-                            </span>
-
-                        </div>
-
-
-                        <!-- BED 2 -->
-
-                        <div class="bed occupied">
-
-                            <div class="bed-number">
-                                02
-                            </div>
-
-                            <div class="bed-icon">
-                                ▬
-                            </div>
-
-                            <strong>
-                                Student 02
-                            </strong>
-
-                            <span>
-                                Occupied
-                            </span>
-
-                        </div>
-
-
-                        <!-- BED 3 -->
-
-                        <div class="bed occupied">
-
-                            <div class="bed-number">
-                                03
-                            </div>
-
-                            <div class="bed-icon">
-                                ▬
-                            </div>
-
-                            <strong>
-                                Student 03
-                            </strong>
-
-                            <span>
-                                Occupied
-                            </span>
-
-                        </div>
-
-
-                        <!-- BED 4 -->
-
-                        <div class="bed occupied">
-
-                            <div class="bed-number">
-                                04
-                            </div>
-
-                            <div class="bed-icon">
-                                ▬
-                            </div>
-
-                            <strong>
-                                Student 04
-                            </strong>
-
-                            <span>
-                                Occupied
-                            </span>
-
-                        </div>
-
-                    </div>
-
-                </section>
-
-
-
-                <!-- ROOM INFORMATION -->
-
-                <section class="panel">
-
-                    <div class="panel-heading">
-
-                        <div>
-
-                            <span class="mini-label">
-                                INFORMATION
-                            </span>
-
-                            <h2>
-                                Room Details
-                            </h2>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="details-list">
-
-                        <div class="detail-row">
-
-                            <span>
-                                Block
-                            </span>
-
-                            <strong>
-                                A Block
-                            </strong>
-
-                        </div>
-
-
-                        <div class="detail-row">
-
-                            <span>
-                                Room Number
-                            </span>
-
-                            <strong>
-                                A-203
-                            </strong>
-
-                        </div>
-
-
-                        <div class="detail-row">
-
-                            <span>
-                                Floor
-                            </span>
-
-                            <strong>
-                                2nd Floor
-                            </strong>
-
-                        </div>
-
-
-                        <div class="detail-row">
-
-                            <span>
-                                Capacity
-                            </span>
-
-                            <strong>
-                                4 Students
-                            </strong>
-
-                        </div>
-
-
-                        <div class="detail-row">
-
-                            <span>
-                                Occupancy
-                            </span>
-
-                            <strong>
-                                4 / 4
-                            </strong>
-
-                        </div>
-
-
-                        <div class="detail-row">
-
-                            <span>
-                                Status
-                            </span>
-
-                            <strong class="green-text">
-                                Active
-                            </strong>
-
-                        </div>
-
-                    </div>
-
-                </section>
+                <span class="capacity-label">
+                    Maximum 4 students
+                </span>
 
             </div>
 
 
+            <div class="students-grid">
 
-            <!-- ================= ROOMMATES ================= -->
 
-            <section class="panel roommates-panel">
+                <!-- STUDENT 1 -->
 
-                <div class="panel-heading">
+                <article class="student-card">
 
-                    <div>
+                    <div class="student-avatar">
+                        S1
+                    </div>
 
-                        <span class="mini-label">
-                            ROOM MEMBERS
+                    <div class="student-info">
+
+                        <span class="student-number">
+                            STUDENT 01
                         </span>
 
-                        <h2>
-                            Roommates
-                        </h2>
+                        <h3>
+                            Student Name
+                        </h3>
+
+                        <p>
+                            Student ID: IITP0001
+                        </p>
+
+                        <p>
+                            Computer Science
+                        </p>
 
                     </div>
 
-                    <span class="member-count">
-                        4 Students
-                    </span>
-
-                </div>
+                </article>
 
 
-                <div class="roommates">
+                <!-- STUDENT 2 -->
 
+                <article class="student-card">
 
-                    <div class="roommate">
+                    <div class="student-avatar">
+                        S2
+                    </div>
 
-                        <div class="roommate-avatar">
-                            S
-                        </div>
+                    <div class="student-info">
 
-                        <div class="roommate-info">
-
-                            <strong>
-                                Santosh
-                            </strong>
-
-                            <span>
-                                Student · Bed 01
-                            </span>
-
-                        </div>
-
-                        <span class="you-badge">
-                            YOU
+                        <span class="student-number">
+                            STUDENT 02
                         </span>
+
+                        <h3>
+                            Student Name
+                        </h3>
+
+                        <p>
+                            Student ID: IITP0002
+                        </p>
+
+                        <p>
+                            Electrical Engineering
+                        </p>
 
                     </div>
 
+                </article>
 
-                    <div class="roommate">
 
-                        <div class="roommate-avatar">
-                            2
-                        </div>
+                <!-- STUDENT 3 -->
 
-                        <div class="roommate-info">
+                <article class="student-card">
 
-                            <strong>
-                                Student 02
-                            </strong>
+                    <div class="student-avatar">
+                        S3
+                    </div>
 
-                            <span>
-                                Student · Bed 02
-                            </span>
+                    <div class="student-info">
 
-                        </div>
-
-                        <span class="occupied-badge">
-                            ACTIVE
+                        <span class="student-number">
+                            STUDENT 03
                         </span>
+
+                        <h3>
+                            Student Name
+                        </h3>
+
+                        <p>
+                            Student ID: IITP0003
+                        </p>
+
+                        <p>
+                            Mechanical Engineering
+                        </p>
 
                     </div>
 
+                </article>
 
-                    <div class="roommate">
 
-                        <div class="roommate-avatar">
-                            3
-                        </div>
+                <!-- STUDENT 4 -->
 
-                        <div class="roommate-info">
+                <article class="student-card">
 
-                            <strong>
-                                Student 03
-                            </strong>
+                    <div class="student-avatar">
+                        S4
+                    </div>
 
-                            <span>
-                                Student · Bed 03
-                            </span>
+                    <div class="student-info">
 
-                        </div>
-
-                        <span class="occupied-badge">
-                            ACTIVE
+                        <span class="student-number">
+                            STUDENT 04
                         </span>
+
+                        <h3>
+                            Student Name
+                        </h3>
+
+                        <p>
+                            Student ID: IITP0004
+                        </p>
+
+                        <p>
+                            Civil Engineering
+                        </p>
 
                     </div>
 
+                </article>
 
-                    <div class="roommate">
+            </div>
 
-                        <div class="roommate-avatar">
-                            4
-                        </div>
-
-                        <div class="roommate-info">
-
-                            <strong>
-                                Student 04
-                            </strong>
-
-                            <span>
-                                Student · Bed 04
-                            </span>
-
-                        </div>
-
-                        <span class="occupied-badge">
-                            ACTIVE
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </section>
+        </section>
 
 
+        <!-- ROOM INFORMATION -->
 
-            <!-- ================= FACILITIES ================= -->
+        <section class="room-info-section">
 
-            <section class="panel facilities-panel">
+            <div class="info-card">
 
-                <div class="panel-heading">
+                <span class="eyebrow">
+                    ROOM INFORMATION
+                </span>
 
-                    <div>
+                <h2>
+                    A simple place to stay.
+                </h2>
 
-                        <span class="mini-label">
-                            ROOM FACILITIES
-                        </span>
+                <p>
+                    Room information, student allocation,
+                    hostel notices and other room-related
+                    details will appear here.
+                </p>
 
-                        <h2>
-                            Available Facilities
-                        </h2>
-
-                    </div>
-
-                </div>
-
-
-                <div class="facilities">
-
-                    <div class="facility">
-
-                        <div class="facility-icon">
-                            ◇
-                        </div>
-
-                        <strong>
-                            Study Table
-                        </strong>
-
-                        <span>
-                            Available
-                        </span>
-
-                    </div>
-
-
-                    <div class="facility">
-
-                        <div class="facility-icon">
-                            ▱
-                        </div>
-
-                        <strong>
-                            Cupboard
-                        </strong>
-
-                        <span>
-                            Available
-                        </span>
-
-                    </div>
-
-
-                    <div class="facility">
-
-                        <div class="facility-icon">
-                            ϟ
-                        </div>
-
-                        <strong>
-                            Power Socket
-                        </strong>
-
-                        <span>
-                            Available
-                        </span>
-
-                    </div>
-
-
-                    <div class="facility">
-
-                        <div class="facility-icon">
-                            ≋
-                        </div>
-
-                        <strong>
-                            Fan
-                        </strong>
-
-                        <span>
-                            Available
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </section>
-
+            </div>
 
         </section>
 
     </main>
 
-</div>
+
+    <script>
+
+        document
+            .getElementById("backButton")
+            .addEventListener("click", function () {
+
+                window.location.href =
+                    "admin-dashboard.html";
+
+            });
+
+    </script>
 
 </body>
+
 </html>

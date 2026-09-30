@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rooms | AI Smart Hostel</title>
+
+    <link rel="stylesheet" href="../css/rooms.css">
+</head>
+
+<body>
+
+    <main class="rooms-page">
+
+        <header class="rooms-header">
+
+            <div>
+                <span class="eyebrow">HOSTEL MANAGEMENT</span>
+
+                <h1>Rooms.</h1>
+
+                <p>
+                    Manage rooms and student occupancy.
+                </p>
+            </div>
+
+            <button class="back-button" id="backButton">
+                ← Dashboard
+            </button>
+
+        </header>
+
+
+        <!-- SUMMARY -->
+
+        <section class="room-summary">
+
+            <div class="summary-card">
+                <span>Total Rooms</span>
+                <strong id="totalRooms">0</strong>
+            </div>
+
+            <div class="summary-card">
+                <span>Total Capacity</span>
+                <strong id="totalCapacity">0</strong>
+            </div>
+
+            <div class="summary-card">
+                <span>Occupied Beds</span>
+                <strong id="occupiedBeds">0</strong>
+            </div>
+
+            <div class="summary-card">
+                <span>Available Beds</span>
+                <strong id="availableBeds">0</strong>
+            </div>
+
+        </section>
+
+
+        <!-- CREATE ROOM -->
+
+        <section class="create-section">
+
+            <div class="section-title">
+
+                <div>
+                    <span class="eyebrow">ROOM SETUP</span>
+                    <h2>Create a room</h2>
+                </div>
+
+            </div>
+
+
+            <form id="roomForm" class="room-form">
+
+                <div class="input-group">
+
+                    <label for="roomNumber">
+                        Room Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="roomNumber"
+                        placeholder="Example: A101"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="blockName">
+                        Block
+                    </label>
+
+                    <input
+                        type="text"
+                        id="blockName"
+                        placeholder="Example: Block A"
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="floorNumber">
+                        Floor
+                    </label>
+
+                    <input
+                        type="number"
+                        id="floorNumber"
+                        placeholder="Example: 1"
+                        min="0"
+                    >
+
+                </div>
+
+
+                <button type="submit" class="create-button">
+                    Create Room →
+                </button>
+
+            </form>
+
+            <p id="roomMessage" class="room-message"></p>
+
+        </section>
+
+
+        <!-- ROOMS -->
+
+        <section class="rooms-section">
+
+            <div class="section-title">
+
+                <div>
+                    <span class="eyebrow">ROOM DIRECTORY</span>
+                    <h2>All rooms</h2>
+                </div>
+
+            </div>
+
+
+            <div id="roomsGrid" class="rooms-grid">
+
+                <div class="loading">
+                    Loading rooms...
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/rooms.js"></script>
+
+</body>
+
+</html>
